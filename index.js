@@ -12,15 +12,16 @@ class HellosNumbers extends React.Component {
   render() {
     return (
       <div>
-      <h1> hey {this.props.name} </h1>
-      <h3> this is the count {this.state.count} </h3>
+        <h1> hey {this.props.name} </h1>
+        <h3 onClick = {()=> this.setState({ count: this.state.count + 1 })}> this is the count {this.state.count} </h3>
       </div>
     )
   }
 
 }
 
-render(<HellosNumbers name='HellosNumbers' />, document.querySelector('main'))
-//onClick with setState incrementing this.props.count by 1
-//some JSX with the state being used
-console.log('welcome to my-first-react')
+
+
+render(<HellosNumbers name='Max' />, document.querySelector('main'))
+
+console.log('welcome to HellosNumbers')
