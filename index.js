@@ -22,6 +22,8 @@ class HellosNumbers extends React.Component {
 
 
 
-render(<HellosNumbers name='Max' />, document.querySelector('main'))
+render(<div><HellosNumbers name='Max' />
+            <HellosNumbers name='Xav' />
+      </div>, document.querySelector('main'))
 
 console.log('welcome to HellosNumbers')
